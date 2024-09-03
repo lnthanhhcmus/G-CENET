@@ -1,4 +1,6 @@
-# The code for the paper under review: Temporal Knowledge Graph Reasoning Based on Generation Mode and Historical Contrastive Learning
+# Temporal Knowledge Graph Reasoning Based on Generation Mode and Historical Contrastive Learning
+
+The code for the paper under review.
 
 ## Preprocessing
 ```bash
