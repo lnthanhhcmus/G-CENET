@@ -1,11 +1,4 @@
-# G-CENET: Generation Mode and Contrastive Event Network
-
-![architecture](architecture.png)
-
-## Authors
-1. Le An Huynh: 20120028@student.hcmus.edu.vn - 0971031912
-2. Thien An Nguyen: 20120030@student.hcmus.edu.vn - 0772697828
-3. Thanh Le: lnthanh@fit.hcmus.edu.vn
+# The code for the paper under review: Temporal Knowledge Graph Reasoning Based on Generation Mode and Historical Contrastive Learning
 
 ## Preprocessing
 ```bash
