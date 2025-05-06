@@ -6,7 +6,7 @@ This repository contains the official implementation of the paper:
 
 G-CENET is a novel dual-path model for temporal knowledge graph link prediction that integrates a generation mode with contrastive learning. It introduces a Dynamic Entity Weighting Module (DEWM) and a latent temporal generative module to improve performance across both frequent and rare entities.
 
-## ⚙️ Environment Setup
+## Environment Setup
 
 We recommend Python 3.8+ and PyTorch 1.10 or above.
 
@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 Data Preprocessing
+## Data Preprocessing
 
 Each dataset needs to be preprocessed to construct historical snapshots. Run:
 ```bash
@@ -30,7 +30,7 @@ This script creates intermediate files required for computing historical frequen
 
 ---
 
-## 🚀 Training and Evaluation
+## Training and Evaluation
 
 Below are example commands to train and evaluate G-CENET on each dataset.
 You must run subject and object prediction separately, and then average results for final scores.
@@ -65,7 +65,7 @@ python main.py -d YAGO --max-epochs 500 --valid-epochs 5 --alpha 0.1 --beta 0.4 
 
 ---
 
-## 📊 Hyperparameter Details
+## Hyperparameter Details
 - `--alpha`: weight for contrastive + structural loss \( \mathcal{L}_{	ext{CE}} \)
 - `--beta`: prediction fusion weight between generative and contrastive paths
 - `--gamma`: weight for generative loss \( \mathcal{L}_{g} \)
@@ -77,14 +77,14 @@ Default vector dimension is 200, batch size is 1024, and learning rate is 0.001.
 
 ---
 
-## 📈 Output & Evaluation
+## Output & Evaluation
 - Results are stored under the `--save_dir` path.
 - Evaluation is automatically triggered if `--eva_dir` is provided.
 - Outputs include Hits@1/3/10, MRR, and ranked candidate lists.
 
 ---
 
-## 📦 Reproducibility Notes
+## Reproducibility Notes
 - All default settings match Table 3 from the paper.
 - The code has been tested on a single NVIDIA GPU (RTX 3090 / A100).
 - Random seeds are fixed internally for reproducibility.
