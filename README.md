@@ -6,21 +6,6 @@ This repository contains the official implementation of the paper:
 
 G-CENET is a novel dual-path model for temporal knowledge graph link prediction that integrates a generation mode with contrastive learning. It introduces a Dynamic Entity Weighting Module (DEWM) and a latent temporal generative module to improve performance across both frequent and rare entities.
 
----
-
-## 📂 Repository Structure
-```
-├── data/                 # Contains raw and preprocessed datasets
-│   └── [dataset]/        # e.g., ICEWS14, ICEWS18, WIKI, YAGO
-├── model/                # Model definition files
-├── utils/                # Utility functions (metrics, loaders, etc.)
-├── main.py               # Entry point for training and evaluation
-├── get_history_graph.py  # Script for building historical entity graph
-└── README.md             # This file
-```
-
----
-
 ## ⚙️ Environment Setup
 
 We recommend Python 3.8+ and PyTorch 1.10 or above.
